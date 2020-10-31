@@ -109,7 +109,7 @@ mongod
 show databases 
 ```
 
-![](/images/showDatabases.png)
+![](/images/showDatabases.PNG)
 
 *Mostra bancos de dados existentes e quanto da memória ocupam* 
 
@@ -117,7 +117,7 @@ show databases
 ```
 use collectionAlunasReprograma 
 ```
-![](/images/use.png)
+![](/images/use.PNG)
 
 *Cria uma coleção chamada collectionAlunasReprograma ou entra em uma já existente com esse mesmo nome*
 
@@ -125,7 +125,7 @@ use collectionAlunasReprograma
 ``` 
 db.collectionAlunasReprograma.insertoOne({"id": 1, "nome": "maré", "signo": "aquário"})
 ``` 
-![](/images/insertOne.png)
+![](/images/insertOne.PNG)
 
 *serve para adicionar um registro dentro de uma coleção que, no caso do exemplo, se constitui enquanto um objeto que representa uma entidade "aluna" e é composto pelos atributos id, nome e signo*.
 
@@ -133,28 +133,28 @@ db.collectionAlunasReprograma.insertoOne({"id": 1, "nome": "maré", "signo": "aq
 db.collectionAlunasReprograma.insertMany([{"id": 2,"nome": "carla", "signo": "peixes"}, {"id": 3, "nome": "anna", "signo": "áries"} ]) 
 ``` 
 
-![](/images/insertMany.png)
+![](/images/insertMany.PNG)
 
 4. *insere um array de objetos (ou seja, uma série de entidades representadas por objetos) na collection ReprogramaAlunas*
 
 ```
 show collections
 ``` 
-![](/images/showCollections.png)
+![](/images/showCollections.PNG)
 
 5. *Retorna as coleções existentes*
 
 ```
 db.collectionAlunasReprograma.find() 
 ``` 
-![](/images/find().png)
+![](/images/find().PNG)
 
 6. *É como listo as entidades que eu tenho em uma coleção*
 
 ``` 
 db.collectionReprogramaAlunas.find().pretty()
 ```  
-![](/images/findPretty.png)
+![](/images/findPretty.PNG)
 
 7. *lista as coleções que tenho com uma formatação mais fácil de ler*
 
@@ -167,7 +167,7 @@ Um filtro é um atributo que iremos utilizar como limitador do resultado da busc
 ``` 
 db.collectionAlunasReprograma.find({"signo":"aquário"}).pretty()
 ``` 
-![](/images/findFiltro.png)
+![](/images/findFiltro.PNG)
 
 *traz os registros das alunas registradas como aquarianas*
 
@@ -176,6 +176,6 @@ Já unindo a função *find()* à *count()* é possível contar quantos elemento
 ``` 
 db.collectionReprograma.find({"turma":"aquário"}).count() 
 ``` 
-![](/images/findCount.png)
+![](/images/findCount.PNG)
 
 *filtra e retorna o número de registros filtrados*
