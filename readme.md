@@ -22,7 +22,7 @@ siglas utilizadas no texto:
 
 **BD** --> Banco de dados
 
-<img src="./images/db.gif">
+![](/images/db.gif)
 
 ### 1. CONCEITO DE BANCO DE DADOS
 
@@ -37,7 +37,7 @@ Mas pode ter certeza que eles estão lá, servindo como uma  **"matéria-prima"*
 
 <div style="text-align:center">
 
-<img src="./images/db2.png">
+![](/images/db2.png)
 
 ### 2. BANCOS DE DADOS RELACIONAIS E NÃO RELACIONAIS
 
@@ -48,7 +48,7 @@ Os bancos de dados podem ser divididos em duas categorias: *relacional* e *não 
 </div>
 <div style="text-align:center">
 
-<img src="./images/sql.png">
+![](/images/SQL.png)
 
 ### RELACIONAIS
 </div>
@@ -63,7 +63,8 @@ Estruturalmente são rígidos, pois só é possível adicionar e manipular dados
 </div>
 <div style="text-align:center">
 
-<img src="./images/nosql.png">
+
+![](/images/noSQL.png)
 
 ### NÃO-RELACIONAIS
 </div>
@@ -75,7 +76,7 @@ Tem como característica principal a flexibilidade, não necessitando de uma lin
 
 No curso de *back-end* da **{reprograma}** estou aprendendo a utilizar uma ferramenta de Gerenciamento de Banco de Dados não-relacionais chamada **MONGO DB**. 
 
-<img src ="./images/mongodb.png">
+![](/images/mongodb.png)
 
 *mas o que são sistemas de gerenciamento de bancos de dados*? 
 </div>
@@ -107,7 +108,8 @@ mongod
 ```
 show databases 
 ```
-<img src ="./images/showDatabases.png">
+
+![](/images/showDatabases.png)
 
 *Mostra bancos de dados existentes e quanto da memória ocupam* 
 
@@ -115,7 +117,7 @@ show databases
 ```
 use collectionAlunasReprograma 
 ```
-<img src ="./images/use.png">
+![](/images/use.png)
 
 *Cria uma coleção chamada collectionAlunasReprograma ou entra em uma já existente com esse mesmo nome*
 
@@ -123,35 +125,36 @@ use collectionAlunasReprograma
 ``` 
 db.collectionAlunasReprograma.insertoOne({"id": 1, "nome": "maré", "signo": "aquário"})
 ``` 
-<img src="./images/insertOne.png">
+![](/images/insertOne.png)
 
 *serve para adicionar um registro dentro de uma coleção que, no caso do exemplo, se constitui enquanto um objeto que representa uma entidade "aluna" e é composto pelos atributos id, nome e signo*.
 
 ``` 
 db.collectionAlunasReprograma.insertMany([{"id": 2,"nome": "carla", "signo": "peixes"}, {"id": 3, "nome": "anna", "signo": "áries"} ]) 
 ``` 
-<img src="./images/insertMany.png">
+
+![](/images/insertMany.png)
 
 4. *insere um array de objetos (ou seja, uma série de entidades representadas por objetos) na collection ReprogramaAlunas*
 
 ```
 show collections
 ``` 
-<img src="./images/showCollections.png">
+![](/images/showCollections.png)
 
 5. *Retorna as coleções existentes*
 
 ```
 db.collectionAlunasReprograma.find() 
 ``` 
-<img src="./images/find().png">
+![](/images/find().png)
 
 6. *É como listo as entidades que eu tenho em uma coleção*
 
 ``` 
 db.collectionReprogramaAlunas.find().pretty()
 ```  
-<img src="./images/findPretty.png">
+![](/images/findPretty.png)
 
 7. *lista as coleções que tenho com uma formatação mais fácil de ler*
 
@@ -164,7 +167,7 @@ Um filtro é um atributo que iremos utilizar como limitador do resultado da busc
 ``` 
 db.collectionAlunasReprograma.find({"signo":"aquário"}).pretty()
 ``` 
-<img src="./images/findFiltro.png">
+![](/images/findFiltro.png)
 
 *traz os registros das alunas registradas como aquarianas*
 
@@ -173,6 +176,6 @@ Já unindo a função *find()* à *count()* é possível contar quantos elemento
 ``` 
 db.collectionReprograma.find({"turma":"aquário"}).count() 
 ``` 
-<img src="./images/findCount.png">
+![](/images/findCount.png)
 
 *filtra e retorna o número de registros filtrados*
